@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guide · Neat Nest user guide</title>
+<meta name="description" content="How to use Neat Nest: opening and saving files, Text, Tree and Table views, JSONPath, Compare and widgets.">
+<meta property="og:title" content="Guide · Neat Nest user guide">
+<meta property="og:description" content="How to use Neat Nest: opening and saving files, Text, Tree and Table views, JSONPath, Compare and widgets.">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Neat Nest</span></a>
+    <nav aria-label="Guide pages"><a href="index.html">Home</a><a href="guide.html" aria-current="page">Guide</a><a href="faq.html">Questions</a><a href="report.html">Report a bug</a></nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="wrap">
+    <p class="kicker">Guide</p>
+    <h1>How Neat Nest works</h1>
+    <article>
+    <h2>Open a file</h2>
+    <p>On the home screen, tap Open a file and pick it in Android's file picker. Or start from another app: tap a .json or .txt file in your file manager, mail or cloud app and pick Neat Nest. When Android asks, tap Always to open such files in Neat Nest every time. If another app already opens JSON files, the home screen names it and has a button to its app info, where Open by default, Clear defaults sets it free.</p>
+    <p>You can also Share a file or some text to Neat Nest, and select JSON in any app and pick Open in Neat Nest from the menu that appears. New JSON, New text and Paste start a document without a file.</p>
+    <h2>Saving</h2>
+    <p>Everything you type is kept on the phone as you type. The line under the name says whether the file has it yet: Saved, or Changes not saved. Tap the save button to write back to the same file. Save as in the menu writes a copy wherever you pick. A document that came without a file asks where to save the first time. Close this document in the menu, or on the home screen, removes it from Neat Nest; your file stays where it is.</p>
+    <h2>The Text view</h2>
+    <dl>
+      <dt>Line numbers and colours</dt><dd>Keys, strings, numbers and true, false and null each have a colour. Turn colours or line numbers off in Settings.</dd>
+      <dt>Status bar</dt><dd>Valid JSON, or the line and column of the first error with what is wrong. Tap an error to jump to it. Below it, the path of the value under the cursor, like <code>$.orders[3].total</code>, with a copy button.</dd>
+      <dt>Key row</dt><dd>Over the keyboard: undo, redo, { } [ ] : , " and Tab.</dd>
+      <dt>Wrap</dt><dd>The wrap button folds long lines to the screen. Turn it off and each line stays one line, and the text scrolls sideways as well as up and down.</dd>
+      <dt>Find and replace</dt><dd>The search button opens find and replace, with Previous, Next, Replace and All.</dd>
+      <dt>Format, Compact, Sort keys</dt><dd>Format indents with 2 spaces (or 4, in Settings), Compact removes the spaces, Sort keys orders every object's keys. They work from any view. Numbers keep their exact digits.</dd>
+    </dl>
+    <h2>The Tree view</h2>
+    <p>Tap an object or array to open or close it. Tap a value, or the three dots on any row, for Edit value, Copy value, Copy path and Delete. Typed values keep their type: <code>42</code> is a number, <code>true</code> a boolean, <code>null</code> null, anything else text. Expand all and Collapse all are in the toolbar. Arrays show 200 items at a time, with Show more at the end. A tree edit writes the whole file back formatted.</p>
+    <h2>The Table view</h2>
+    <p>An array of objects, or an object that holds one, becomes a table. Nested keys become dotted columns like <code>customer.city</code>. Tap a column header to sort it up, again for down, again to go back. Tap a cell to see all of it and copy it. Tables show the first 1,000 rows.</p>
+    <h2>JSONPath filter</h2>
+    <p>In the Tree and Table views, type a query in the filter box:</p>
+    <dl>
+      <dt>$.store.book[0].title</dt><dd>names and indexes; the leading $ is optional</dd>
+      <dt>items[-1] and items[1:3]</dt><dd>from the end, and slices</dd>
+      <dt>$.a[*] and $..id</dt><dd>every child, and every id at any depth</dd>
+      <dt>users[?(@.age &gt;= 18)]</dt><dd>filters with == != &lt; &lt;= &gt; &gt;=, =~ /regex/i, &amp;&amp;, || and !</dd>
+    </dl>
+    <p>Tap a match for Show in the tree, Copy value and Copy path. In the Table view the matches become the rows.</p>
+    <h2>Compare</h2>
+    <p>Tap the compare button at the top and pick the second JSON: a file, the clipboard, or another open document. The Tree view then shows both. Key order and formatting do not count; array items are lined up by value. Changed values are marked with a tilde, added with a plus, removed with a minus, each with its own colour. The counts at the top list them; tap one to see where. The arrows step through every difference. Swap puts the sides the other way round. On a tablet or in landscape the sides sit next to each other.</p>
+    <h2>Big files</h2>
+    <p>Neat Nest opens files up to 20 MB. Up to about 800 KB the Text view edits everything. Past that, the Text view reads the file and scrolls it smoothly (drag the right edge to move fast), and you change values in the Tree view or with Format, Sort keys and Replace all.</p>
+    <h2>Widgets and shortcuts</h2>
+    <p>Two widgets: Quick actions (Open, New, Paste, Compare) and Recent files. Add them from the home screen's widget list, or from the buttons on Neat Nest's home screen. Touch and hold the app icon for the same shortcuts.</p>
+    <h2>Settings</h2>
+    <p>Theme (follow the phone, light, dark or black), text size, indent, wrap, line numbers, colours, the key row, and a reading font for plain text files. Neat Nest follows Android's own font size up to 200 percent and works with TalkBack.</p>
+    </article>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Guide text and images are shared under CC BY 4.0. The Neat Nest app itself is proprietary. Made by Marko Zanoski.</span>
+    <nav aria-label="Footer"><a href="https://play.google.com/store/apps/details?id=com.zanoshky.neatnest">Google Play</a><a href="https://neatnest.zanoski.com">neatnest.zanoski.com</a><a href="https://github.com/Zanoshky/neat-nest-app/issues">Issues</a><a href="https://neatnest.zanoski.com/privacy">Privacy</a></nav>
+  </div>
+</footer>
+</body>
+</html>

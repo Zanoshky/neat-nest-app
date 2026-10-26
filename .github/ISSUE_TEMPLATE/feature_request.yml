@@ -1,0 +1,46 @@
+name: Feature request
+description: An idea for something Neat Nest could do.
+title: "[idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you want
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What would it help you do? A real example helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which screen or view?"
+      options:
+        - Text view
+        - Tree view
+        - Table view
+        - Compare
+        - JSONPath filter
+        - find and replace
+        - Format, Compact or Sort keys
+        - opening or saving a file
+        - opening from another app or Share
+        - big files
+        - widgets or shortcuts
+        - home screen
+        - settings
+        - other
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this idea is not there yet.
+          required: true

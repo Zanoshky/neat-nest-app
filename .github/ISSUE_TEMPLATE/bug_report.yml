@@ -1,0 +1,71 @@
+name: Bug report
+description: Something in Neat Nest does not work, looks wrong or crashes.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. One problem per report, please.
+        Issues here are public. Never paste private data, keys or passwords.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Neat Nest, Settings, at the bottom.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model
+      placeholder: Pixel 8
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      placeholder: "15"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which screen or view?"
+      options:
+        - Text view
+        - Tree view
+        - Table view
+        - Compare
+        - JSONPath filter
+        - find and replace
+        - Format, Compact or Sort keys
+        - opening or saving a file
+        - opening from another app or Share
+        - big files
+        - widgets or shortcuts
+        - home screen
+        - settings
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      description: What you did, one step per line.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected, and what happened
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or a small sample file
+      description: Only if it holds nothing private.

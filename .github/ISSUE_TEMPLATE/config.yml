@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User guide
+    url: https://zanoshky.github.io/neat-nest-app/
+    about: Opening and saving files, the views, JSONPath, Compare, widgets and common questions.
+  - name: neatnest.zanoski.com
+    url: https://neatnest.zanoski.com
+    about: The Neat Nest website, with the privacy policy and contact details.

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Questions · Neat Nest user guide</title>
+<meta name="description" content="Answers to common questions about Neat Nest.">
+<meta property="og:title" content="Questions · Neat Nest user guide">
+<meta property="og:description" content="Answers to common questions about Neat Nest.">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Neat Nest</span></a>
+    <nav aria-label="Guide pages"><a href="index.html">Home</a><a href="guide.html">Guide</a><a href="faq.html" aria-current="page">Questions</a><a href="report.html">Report a bug</a></nav>
+  </div>
+</header>
+<main id="main" class="page">
+  <div class="wrap">
+    <p class="kicker">Questions</p>
+    <h1>Questions and fixes</h1>
+    <article>
+    <h2>Neat Nest is not in the list when I tap a file</h2>
+    <p>Some apps send JSON files as an unknown type. Open Neat Nest and use Open a file instead, or Share the file to Neat Nest.</p>
+    <h2>Another app keeps opening my JSON files</h2>
+    <p>Neat Nest's home screen names that app. Open its app info, tap Open by default, then Clear defaults. Next time, pick Neat Nest and Always.</p>
+    <h2>It says the file is read only here</h2>
+    <p>The app that handed over the file did not allow writing to it. Save makes a copy where you pick. Opening the file with Open a file instead usually allows saving back.</p>
+    <h2>The Tree view says the document is not valid JSON</h2>
+    <p>Go to the Text view; the status bar shows the line and column of the first problem. Tap it to jump there. Common ones are a comma before } or ], single quotes, and comments, which JSON does not allow.</p>
+    <h2>A warning says a number may be rounded</h2>
+    <p>Numbers over 9007199254740991, or with more than 17 digits, cannot be kept exactly by many other apps and languages. Neat Nest keeps them as written; the warning is for whatever reads the file next.</p>
+    <h2>Copy says the text is too big for the clipboard</h2>
+    <p>Android's clipboard holds about a megabyte. Use Share or Save as for bigger text.</p>
+    <h2>Does Neat Nest send my files anywhere?</h2>
+    <p>No. It has no internet access at all. See the <a href="https://neatnest.zanoski.com/privacy">privacy policy</a>.</p>
+    </article>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <span>Guide text and images are shared under CC BY 4.0. The Neat Nest app itself is proprietary. Made by Marko Zanoski.</span>
+    <nav aria-label="Footer"><a href="https://play.google.com/store/apps/details?id=com.zanoshky.neatnest">Google Play</a><a href="https://neatnest.zanoski.com">neatnest.zanoski.com</a><a href="https://github.com/Zanoshky/neat-nest-app/issues">Issues</a><a href="https://neatnest.zanoski.com/privacy">Privacy</a></nav>
+  </div>
+</footer>
+</body>
+</html>
