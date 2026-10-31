@@ -91,7 +91,7 @@ def toc(items):
 
 INDEX = f'''    <p class="kicker">User guide</p>
     <h1>Neat Nest</h1>
-    <p class="lead">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Text, Tree and Table views, a JSONPath filter, and a structural compare. Pay once, no ads, works offline. This guide is for Neat Nest 1.1.3.</p>
+    <p class="lead">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Text, Tree and Table views, a JSONPath filter, and a structural compare. Free to open, edit, format and check JSON and text; Pro, one payment, adds Tree, Table, Compare and the editor themes. No ads, works offline. This guide is for Neat Nest 1.2.0.</p>
     <div class="shots">
       {shot("0-home", "Home: Open a file, tiles for New JSON, New text, Paste and Compare JSON, the open documents, and the bar with Home, Recent and Settings.", "Home", False)}
       {shot("1-text", "The Text view with line numbers and JSON colours, the tool row above and undo and redo below.", "Text view", False)}
@@ -195,7 +195,7 @@ GUIDE = f'''    <p class="kicker">Guide</p>
     {pair(("7-settings", "Settings: the list of pages, Support the developer, and the bar.", "Settings"), ("8-privacy", "Settings, Privacy: the promises on red ban chips and the permissions it never asks for.", "Privacy"))}
 
     <h2 id="pro">Pro</h2>
-    <p>Pro is the name for these tools: the Tree view, the Table view with the JSONPath filter, Compare, and the 20 popular editor themes. If you bought Neat Nest, every one of them is yours, with nothing more to pay.</p>
+    <p>Neat Nest is free to open, edit, format and check JSON and text. Pro, one payment, adds the Tree view, the Table view with the JSONPath filter, Compare, and the 20 popular editor themes. Google Play shows the price in your currency. If you bought Neat Nest, every one of them is yours, with nothing more to pay.</p>
     <p>Always in Neat Nest without Pro: opening, editing and saving JSON and text, Format, Compact and Sort keys, the line and column of an error, find and replace, everything in the Text view, and the four looks: Follow the phone, Default Light, Default Dark and Black.</p>
     <p>Without Pro, the Tree and Table tabs carry a small lock, and Compare and the editor themes say Pro. Tapping one opens a sheet from the bottom that says what Pro adds, with Get Pro and Not now. Settings, Pro is the full page: what you get, what stays free, and Restore purchase, which asks Google Play again on a new phone. Pro is one payment through Google Play, yours for good, with no subscription and no account.</p>
     </article>'''
@@ -221,6 +221,8 @@ FAQ = '''    <p class="kicker">Questions</p>
     <p>Yes, through Android's own file picker. A cloud storage app such as Google Drive or OneDrive that is on your phone and signed in shows its files in the picker's list of places, or open the file from inside that app and pick Neat Nest. Neat Nest itself never goes online and needs no account, so it has no sign in of its own.</p>
     <h2>Where did Settings go?</h2>
     <p>Since 1.1.2 Settings is the last item in the bar at the bottom, beside Home and Recent. In the editor, More, Settings opens it too.</p>
+    <h2>What is free, and what is Pro?</h2>
+    <p>Free: opening, editing and saving JSON and text, Format, Compact and Sort keys, the line and column of an error, find and replace, and the four looks. Pro, one payment through Google Play, adds the Tree and Table views with the JSONPath filter, Compare, and the 20 editor themes. People who bought Neat Nest keep every tool, with nothing more to pay. See <a href="guide.html#pro">Pro</a>.</p>
     <h2>Does Neat Nest send my files anywhere?</h2>
     <p>No. It has no internet access at all. See the <a href="https://neatnest.zanoski.com/privacy">privacy policy</a>.</p>
     </article>'''
@@ -257,7 +259,7 @@ print('built style.css')
 
 bad = 0
 for (file, title), desc, body in zip(PAGES,
-        ['The user guide for Neat Nest, the JSON and text editor for Android.', 'How to use Neat Nest 1.1.3: home and the bar, recent files, opening and saving files, Text, Tree and Table views, JSONPath, Compare, widgets and Settings.',
+        ['The user guide for Neat Nest, the JSON and text editor for Android.', 'How to use Neat Nest 1.2.0: home and the bar, recent files, opening and saving files, Text, Tree and Table views, JSONPath, Compare, widgets and Settings.',
          'Answers to common questions about Neat Nest.', 'How to report a Neat Nest bug or ask for a feature.'],
         [INDEX, GUIDE, FAQ, REPORT]):
     html = shell(file, title, desc, body)

@@ -4,7 +4,7 @@
 
 <h1 align="center">Neat Nest</h1>
 
-<p align="center">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Pay once, no ads, works offline.</p>
+<p align="center">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Free to edit, with Pro for Tree, Table, Compare and themes. No ads, works offline.</p>
 
 <p align="center">
   <a href="https://play.google.com/store/apps/details?id=com.zanoshky.neatnest"><b>Google Play</b></a> ·
@@ -17,7 +17,7 @@
   <img src="docs/img/3-compare.jpg" width="320" alt="Neat Nest comparing two JSON files, with the counts of added, removed and changed values and the changed version number marked">
 </p>
 
-This repo is the public home for Neat Nest users: the user guide, bug reports and feature requests. The app itself is a paid Android app and its source is not here.
+This repo is the public home for Neat Nest users: the user guide, bug reports and feature requests. The app itself is a free Android app with an optional Pro purchase, and its source is not here.
 
 ## Quick start
 
