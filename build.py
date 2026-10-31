@@ -105,11 +105,11 @@ INDEX = f'''    <p class="kicker">User guide</p>
       <a class="key tonal" href="report.html">Report a bug or ask for a feature</a>
     </div>
     <h2 style="margin-top:48px">In this guide</h2>
-    {toc([("guide.html#home", "Home and the bar"), ("guide.html#recent", "Recent files"), ("guide.html#open", "Open and save a file"), ("guide.html#text", "The Text view"), ("guide.html#tree", "The Tree view"), ("guide.html#table", "The Table view"), ("guide.html#filter", "JSONPath filter"), ("guide.html#compare", "Compare two JSON files"), ("guide.html#big", "Big files"), ("guide.html#widgets", "Widgets and shortcuts"), ("guide.html#settings", "Settings")])}'''
+    {toc([("guide.html#home", "Home and the bar"), ("guide.html#recent", "Recent files"), ("guide.html#open", "Open and save a file"), ("guide.html#text", "The Text view"), ("guide.html#tree", "The Tree view"), ("guide.html#table", "The Table view"), ("guide.html#filter", "JSONPath filter"), ("guide.html#compare", "Compare two JSON files"), ("guide.html#big", "Big files"), ("guide.html#widgets", "Widgets and shortcuts"), ("guide.html#settings", "Settings"), ("guide.html#pro", "Pro")])}'''
 
 GUIDE = f'''    <p class="kicker">Guide</p>
     <h1>How Neat Nest works</h1>
-    <p class="lead">Every screen of Neat Nest 1.1.3, in the order you meet them.</p>
+    <p class="lead">Every screen of Neat Nest 1.1.4, in the order you meet them.</p>
     <article>
     <h2 id="home">Home and the bar</h2>
     <p>A bar at the bottom holds Home, Recent and Settings, so each is one tap from the others. Tap the one you are on to go back to its top.</p>
@@ -186,12 +186,18 @@ GUIDE = f'''    <p class="kicker">Guide</p>
       <dt>Text and keys</dt><dd>Text size from 10 to 20 (14 is the default), indent when formatting (2 or 4 spaces), Wrap long lines, Line numbers, JSON colours, Bracket and quote keys over the keyboard, and Plain text files in a reading font, not mono.</dd>
       <dt>Opening files</dt><dd>Which app opens JSON files on this phone right now, and How to open files.</dd>
       <dt>Widgets</dt><dd>Add the Quick actions or the Recent files widget.</dd>
-      <dt>Privacy</dt><dd>The promises on red ban chips, the permissions Neat Nest never asks for (it asks for none at all), what happens to the files you open, and the privacy policy.</dd>
+      <dt>Privacy</dt><dd>The promises on red ban chips, the one permission Neat Nest has (Google Play billing, for Pro) and why, the permissions it never asks for, what happens to the files you open, and the privacy policy.</dd>
+      <dt>Pro</dt><dd>What Pro adds and Restore purchase, see Pro below.</dd>
       <dt>Help and feedback</dt><dd>User guide, Report a bug or ask for a feature, Privacy policy, and the font and icon credits.</dd>
     </dl>
     <p>Under the list, Support the developer has a Buy me a coffee button, and About at the bottom shows Neat Nest and its version.</p>
     <p>Neat Nest follows Android's own font size up to 200 percent and works with TalkBack.</p>
     {pair(("7-settings", "Settings: the list of pages, Support the developer, and the bar.", "Settings"), ("8-privacy", "Settings, Privacy: the promises on red ban chips and the permissions it never asks for.", "Privacy"))}
+
+    <h2 id="pro">Pro</h2>
+    <p>Pro is the name for these tools: the Tree view, the Table view with the JSONPath filter, Compare, and the 20 popular editor themes. If you bought Neat Nest, every one of them is yours, with nothing more to pay.</p>
+    <p>Always in Neat Nest without Pro: opening, editing and saving JSON and text, Format, Compact and Sort keys, the line and column of an error, find and replace, everything in the Text view, and the four looks: Follow the phone, Default Light, Default Dark and Black.</p>
+    <p>Without Pro, the Tree and Table tabs carry a small lock, and Compare and the editor themes say Pro. Tapping one opens a sheet from the bottom that says what Pro adds, with Get Pro and Not now. Settings, Pro is the full page: what you get, what stays free, and Restore purchase, which asks Google Play again on a new phone. Pro is one payment through Google Play, yours for good, with no subscription and no account.</p>
     </article>'''
 
 FAQ = '''    <p class="kicker">Questions</p>
