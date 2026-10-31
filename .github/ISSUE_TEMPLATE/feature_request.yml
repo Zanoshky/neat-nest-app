@@ -32,7 +32,8 @@ body:
         - opening from another app or Share
         - big files
         - widgets or shortcuts
-        - home screen
+        - home screen or recent files
+        - the More menu
         - settings
         - other
     validations:

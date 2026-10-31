@@ -12,8 +12,8 @@ body:
     id: version
     attributes:
       label: App version
-      description: Neat Nest, Settings, at the bottom.
-      placeholder: "1.0.0"
+      description: Neat Nest, Settings, the About card at the bottom.
+      placeholder: "1.1.0"
     validations:
       required: true
   - type: input
@@ -46,7 +46,8 @@ body:
         - opening from another app or Share
         - big files
         - widgets or shortcuts
-        - home screen
+        - home screen or recent files
+        - the More menu
         - settings
         - other
     validations:
