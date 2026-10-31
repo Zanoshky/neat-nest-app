@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/img/3-compare.jpg" width="320" alt="Neat Nest 1.1.0 comparing two JSON files, with the counts of added, removed and changed values and the changed version number marked">
+  <img src="docs/img/3-compare.jpg" width="320" alt="Neat Nest comparing two JSON files, with the counts of added, removed and changed values and the changed version number marked">
 </p>
 
 This repo is the public home for Neat Nest users: the user guide, bug reports and feature requests. The app itself is a paid Android app and its source is not here.
@@ -24,7 +24,8 @@ This repo is the public home for Neat Nest users: the user guide, bug reports an
 1. Install Neat Nest from Google Play. It runs on Android 7 or newer.
 2. Tap Open a file, or tap a .json file in your file manager and pick Neat Nest, then Always.
 3. Switch between Text, Tree and Table at the top of the editor.
-4. Open More (the three dots at the top right) and tap Compare with another JSON to put a second JSON beside it, or start from the Compare JSON tile on the home screen.
+4. Home, Recent and Settings sit in the bar at the bottom; Settings is a short list with a page for each part.
+5. Open More (the three dots at the top right) and tap Compare with another JSON to put a second JSON beside it, or start from the Compare JSON tile on the home screen.
 
 Read the full [user guide](https://zanoshky.github.io/neat-nest-app/guide.html) and the [questions and fixes](https://zanoshky.github.io/neat-nest-app/faq.html).
 

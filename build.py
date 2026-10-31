@@ -91,34 +91,38 @@ def toc(items):
 
 INDEX = f'''    <p class="kicker">User guide</p>
     <h1>Neat Nest</h1>
-    <p class="lead">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Text, Tree and Table views, a JSONPath filter, and a structural compare. Pay once, no ads, works offline. This guide is for Neat Nest 1.1.0.</p>
+    <p class="lead">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Text, Tree and Table views, a JSONPath filter, and a structural compare. Pay once, no ads, works offline. This guide is for Neat Nest 1.1.2.</p>
     <div class="shots">
-      {shot("0-home", "The home screen: Open a file, tiles for New JSON, New text, Paste and Compare JSON, and the open documents.", "Home", False)}
+      {shot("0-home", "Home: Open a file, tiles for New JSON, New text, Paste and Compare JSON, the open documents, and the bar with Home, Recent and Settings.", "Home", False)}
       {shot("1-text", "The Text view with line numbers and JSON colours, the tool row above and undo and redo below.", "Text view", False)}
       {shot("2-tree", "The Tree view with the JSONPath filter box and objects opened, each value coloured by type.", "Tree view")}
       {shot("3-compare", "Compare: two versions of a file, 1 added, 2 removed and 3 changed, with the changed version number marked.", "Compare")}
       {shot("4-table", "The Table view of an array of orders, with id, customer name and customer city columns.", "Table view")}
-      {shot("7-settings", "Settings: the Look tiles Follow the phone, Default Light, Default Dark and Black, and the editor themes.", "Settings")}
+      {shot("7-settings", "Settings: Look, Text and keys, Opening files, Widgets, Privacy, and Help and feedback, each opening its own page.", "Settings")}
     </div>
     <div class="keys cta">
       <a class="key filled" href="guide.html">Read the guide</a>
       <a class="key tonal" href="report.html">Report a bug or ask for a feature</a>
     </div>
     <h2 style="margin-top:48px">In this guide</h2>
-    {toc([("guide.html#home", "The home screen"), ("guide.html#open", "Open and save a file"), ("guide.html#text", "The Text view"), ("guide.html#tree", "The Tree view"), ("guide.html#table", "The Table view"), ("guide.html#filter", "JSONPath filter"), ("guide.html#compare", "Compare two JSON files"), ("guide.html#big", "Big files"), ("guide.html#widgets", "Widgets and shortcuts"), ("guide.html#settings", "Settings")])}'''
+    {toc([("guide.html#home", "Home and the bar"), ("guide.html#recent", "Recent files"), ("guide.html#open", "Open and save a file"), ("guide.html#text", "The Text view"), ("guide.html#tree", "The Tree view"), ("guide.html#table", "The Table view"), ("guide.html#filter", "JSONPath filter"), ("guide.html#compare", "Compare two JSON files"), ("guide.html#big", "Big files"), ("guide.html#widgets", "Widgets and shortcuts"), ("guide.html#settings", "Settings")])}'''
 
 GUIDE = f'''    <p class="kicker">Guide</p>
     <h1>How Neat Nest works</h1>
-    <p class="lead">Every screen of Neat Nest 1.1.0, in the order you meet them.</p>
+    <p class="lead">Every screen of Neat Nest 1.1.2, in the order you meet them.</p>
     <article>
-    <h2 id="home">The home screen</h2>
-    <p>The name sits at the top with Settings at the far right. Below it, Open a file, then four tiles: New JSON, New text, Paste and Compare JSON. Paste starts a document from what you copied last.</p>
-    <p>Open documents lists what you are working on, each with whether it is saved. Its three dots give Open, Compare with another JSON and Close. Recent files shows the last four files you opened (six on a tablet) and ends in a See all row with the whole list. A recent file's three dots can remove it from the list. On the very first start there is nothing open yet, and Try the sample opens a small JSON file to try the views on.</p>
+    <h2 id="home">Home and the bar</h2>
+    <p>A bar at the bottom holds Home, Recent and Settings, so each is one tap from the others. Tap the one you are on to go back to its top.</p>
+    <p>Home has the name at the top, then Open a file and four tiles: New JSON, New text, Paste and Compare JSON, each with its icon beside its name, two across on a phone and four on a wide screen. Paste starts a document from what you copied last.</p>
+    <p>Open documents lists what you are working on, each with whether it is saved. Its three dots give Open, Compare with another JSON and Close. Recent files shows the last four files you opened (six on a tablet) and ends in a See all row that opens Recent. A recent file's three dots can remove it from the list. On the very first start there is nothing open yet, and Try the sample opens a small JSON file to try the views on.</p>
     <p>On your home screen holds the two widget keys, Quick actions widget and Recent files widget. On a tablet, the open and recent files sit in a column on the right.</p>
-    {pair(("0-home", "The home screen with four open documents.", "Home"), ("9-more", "The More menu as a sheet from the bottom.", "The More menu"))}
+    {pair(("0-home", "Home with four open documents, and the bar with Home, Recent and Settings.", "Home"), ("9-more", "The More menu as a sheet from the bottom.", "The More menu"))}
+
+    <h2 id="recent">Recent files</h2>
+    <p>Recent, the middle of the bar, lists the files you opened before, up to the last 12. Tap one to open it again. Its three dots give Remove from recent files. Until you have opened and closed a file, it says No recent files.</p>
 
     <h2 id="open">Open and save a file</h2>
-    <p>Tap Open a file and pick it in Android's file picker. Or start from another app: tap a .json or .txt file in Files, Gmail or Drive and pick Neat Nest. When Android asks, tap Always to open such files in Neat Nest every time. If another app already opens JSON files, the home screen names it and has a button to its app info, where Open by default, Clear defaults sets it free. Show me how explains the steps; Got it hides the card.</p>
+    <p>Tap Open a file and pick it in Android's file picker. Or start from another app: tap a .json or .txt file in Files, Gmail or Drive and pick Neat Nest. When Android asks, tap Always to open such files in Neat Nest every time. If another app already opens JSON files, Home names it and has a button to its app info, where Open by default, Clear defaults sets it free. Show me how explains the steps; Got it hides the card.</p>
     <p>You can also Share a file or some text to Neat Nest, and select JSON in any app and pick Open in Neat Nest from the menu that appears.</p>
     <p>Everything you type is kept on the phone as you type. The line under the name says where the file stands: Saved, Changes not saved, or Not saved to a file. The save button at the top writes back to the same file. The three dots at the top right open More, a sheet from the bottom:</p>
     <dl class="plate">
@@ -128,7 +132,7 @@ GUIDE = f'''    <p class="kicker">Guide</p>
       <dt>Compare with another JSON</dt><dd>Starts Compare, or Exit compare while it is on.</dd>
       <dt>Treat as plain text, or Treat as JSON</dt><dd>Switches a file between the JSON views and plain text.</dd>
       <dt>Wrap long lines</dt><dd>On when it has a tick.</dd>
-      <dt>Settings</dt><dd>Opens Settings.</dd>
+      <dt>Settings</dt><dd>Opens Settings over the editor, with Back at the top.</dd>
       <dt>Close this document</dt><dd>Last, in red. It removes the document from Neat Nest; your file stays where it is. A text that was never saved to a file asks first.</dd>
     </dl>
     <p>A document that was never saved to a file gets its name from you: tap the name at the top to change it.</p>
@@ -136,13 +140,13 @@ GUIDE = f'''    <p class="kicker">Guide</p>
     <h2 id="text">The Text view</h2>
     <p>For JSON, the Text, Tree and Table tabs sit under the top bar, with the tools in a row under them: Format, Compact, Sort keys, Wrap, Find and Copy all (Expand all and Collapse all in the Tree view). On a phone the tools are icons; touch and hold one to see its name. On a wide screen they carry their names.</p>
     <dl class="plate">
-      <dt>Line numbers and colours</dt><dd>Keys, strings, numbers and true, false and null each have a colour. Turn colours or line numbers off in Settings.</dd>
+      <dt>Line numbers and colours</dt><dd>Keys, strings, numbers and true, false and null each have a colour. Turn colours or line numbers off in Settings, Text and keys.</dd>
       <dt>Status</dt><dd>At the bottom: Valid JSON, or the line and column of the first error with what is wrong, plus the line count and size. Tap an error to jump to it.</dd>
       <dt>Undo, redo and the path</dt><dd>Under the status: undo and redo, then the path of the value under the cursor, like <code>$.orders[3].total</code>, with a copy button. While the keyboard is up the two rows fold into one.</dd>
-      <dt>Key row</dt><dd>Over the keyboard: {{ }} [ ] : , " and Tab. Turn it off in Settings.</dd>
+      <dt>Key row</dt><dd>Over the keyboard: {{ }} [ ] : , " and Tab. Turn it off in Settings, Text and keys.</dd>
       <dt>Wrap</dt><dd>Folds long lines to the screen. Turn it off and each line stays one line, and the text scrolls sideways as well as up and down.</dd>
       <dt>Find and replace</dt><dd>The search tool opens find and replace, with Previous, Next, Replace and All.</dd>
-      <dt>Format, Compact, Sort keys</dt><dd>Format indents with 2 spaces (or 4, in Settings), Compact removes the spaces, Sort keys orders every object's keys. They work from any view. Numbers keep their exact digits.</dd>
+      <dt>Format, Compact, Sort keys</dt><dd>Format indents with 2 spaces (or 4, in Settings, Text and keys), Compact removes the spaces, Sort keys orders every object's keys. They work from any view. Numbers keep their exact digits.</dd>
     </dl>
     {pair(("1-text", "The Text view of a JSON file.", "Text view"), ("6-error", "Invalid JSON: line 7 is marked and the status says a comma before a closing brace is not allowed.", "An error, with its line and column"))}
 
@@ -165,7 +169,7 @@ GUIDE = f'''    <p class="kicker">Guide</p>
     {pair(("5-query", "A filter for open orders in the Table view, with 12 matches as rows.", "A filter in the Table view"), ("2-tree", "The filter box over the Tree view.", "The filter box in the Tree view"))}
 
     <h2 id="compare">Compare two JSON files</h2>
-    <p>Start it from More, Compare with another JSON, from the Compare JSON tile on the home screen, or from the Quick actions widget. Pick the second JSON: Open a file, Paste from the clipboard, another open document, or Empty, I will type or paste. Key order and formatting do not count as a change, and array items are lined up by value.</p>
+    <p>Start it from More, Compare with another JSON, from the Compare JSON tile on Home, or from the Quick actions widget. Pick the second JSON: Open a file, Paste from the clipboard, another open document, or Empty, I will type or paste. Key order and formatting do not count as a change, and array items are lined up by value.</p>
     <p>A bar under the top bar holds Exit, Swap sides, and once there is a difference, Previous and Next with where you are, like 1 of 6. Under it the counts: added, removed, changed and the same. Tap a count to list those changes and go to one. In the Tree view changed values are marked with a tilde, added with a plus and removed with a minus, each with its own colour. On a tablet or in landscape the two sides sit next to each other; on a phone, Left and Right tabs switch between them.</p>
     {pair(("3a-compare-pick", "Compare with: Open a file, or Empty, I will type or paste.", "Pick the second JSON"), ("3-compare", "Compare with the counts and the changed version number marked.", "Compare"))}
 
@@ -173,22 +177,21 @@ GUIDE = f'''    <p class="kicker">Guide</p>
     <p>Neat Nest opens files up to 20 MB. Up to about 800 KB the Text view edits everything. Past that, the Text view reads the file and scrolls it smoothly (drag the right edge to move fast), and you change values in the Tree view or with Format, Sort keys and Replace all.</p>
 
     <h2 id="widgets">Widgets and shortcuts</h2>
-    <p>Two widgets: Quick actions (Open, New, Paste, Compare) and Recent files. Add them with the keys on Neat Nest's home screen or in Settings, Widgets, or from your home screen's widget list. Touch and hold the app icon for the same shortcuts.</p>
+    <p>Two widgets: Quick actions (Open, New, Paste, Compare) and Recent files. Add them with the keys on Home or in Settings, Widgets, or from your home screen's widget list. Touch and hold the app icon for the same shortcuts.</p>
 
     <h2 id="settings">Settings</h2>
-    <p>Settings fills the screen, with Back at the top. In order:</p>
+    <p>Settings is the last item in the bar. It is a short list, and each row opens its own page with Back at the top. Each row says what is set now, like the look in use or the text size.</p>
     <dl class="plate">
-      <dt>Look</dt><dd>Four tiles: Follow the phone (Light by day, Dark at night), Default Light, Default Dark and Black (true black for OLED). These three are held to 7:1 contrast. Under them, Editor themes, in their own colours: a list of 20 popular editor themes such as Dracula, One Dark Pro, Nord and Solarized, with a sample of the editor below.</dd>
-      <dt>Editor</dt><dd>Text size from 10 to 20 (14 is the default), indent when formatting (2 or 4 spaces), Wrap long lines, Line numbers, JSON colours, Bracket and quote keys over the keyboard, and Plain text files in a reading font, not mono.</dd>
+      <dt>Look</dt><dd>Four tiles: Follow the phone (Light by day, Dark at night), Default Light, Default Dark and Black (true black for OLED). These four are held to 7:1 contrast. Under them, Editor themes: 20 popular editor themes such as Dracula, One Dark Pro, Nord and Solarized, in their own colours, and a sample of the editor.</dd>
+      <dt>Text and keys</dt><dd>Text size from 10 to 20 (14 is the default), indent when formatting (2 or 4 spaces), Wrap long lines, Line numbers, JSON colours, Bracket and quote keys over the keyboard, and Plain text files in a reading font, not mono.</dd>
       <dt>Opening files</dt><dd>Which app opens JSON files on this phone right now, and How to open files.</dd>
-      <dt>Widgets</dt><dd>Quick actions and Recent files.</dd>
-      <dt>Privacy</dt><dd>The promises on red ban chips (No ads, No tracking, No analytics, No crash reports, No error reports, No account, No AI, No internet), and the permissions Neat Nest never asks for. It asks for none at all.</dd>
-      <dt>Help</dt><dd>User guide, Report a bug or ask for a feature, and Privacy policy.</dd>
-      <dt>Support the developer</dt><dd>A link to buymeacoffee.com/zanoshky.</dd>
-      <dt>About</dt><dd>Neat Nest and its version, the privacy line, and the font and icon credits.</dd>
+      <dt>Widgets</dt><dd>Add the Quick actions or the Recent files widget.</dd>
+      <dt>Privacy</dt><dd>The promises on red ban chips, the permissions Neat Nest never asks for (it asks for none at all), what happens to the files you open, and the privacy policy.</dd>
+      <dt>Help and feedback</dt><dd>User guide, Report a bug or ask for a feature, Privacy policy, and the font and icon credits.</dd>
     </dl>
+    <p>Under the list, Support the developer has a Buy me a coffee button, and About at the bottom shows Neat Nest and its version.</p>
     <p>Neat Nest follows Android's own font size up to 200 percent and works with TalkBack.</p>
-    {pair(("7-settings", "Settings: the Look tiles and the editor themes list.", "Look"), ("8-privacy", "Settings, Privacy: the promises on red ban chips, and Help.", "Privacy and Help"))}
+    {pair(("7-settings", "Settings: the list of pages, Support the developer, and the bar.", "Settings"), ("8-privacy", "Settings, Privacy: the promises on red ban chips and the permissions it never asks for.", "Privacy"))}
     </article>'''
 
 FAQ = '''    <p class="kicker">Questions</p>
@@ -197,7 +200,7 @@ FAQ = '''    <p class="kicker">Questions</p>
     <h2>Neat Nest is not in the list when I tap a file</h2>
     <p>Some apps send JSON files as an unknown type. Open Neat Nest and use Open a file instead, or Share the file to Neat Nest.</p>
     <h2>Another app keeps opening my JSON files</h2>
-    <p>Neat Nest's home screen names that app. Open its app info, tap Open by default, then Clear defaults. Next time, pick Neat Nest and Always. Settings, Opening files says which app opens them now.</p>
+    <p>Neat Nest's Home names that app. Open its app info, tap Open by default, then Clear defaults. Next time, pick Neat Nest and Always. Settings, Opening files says which app opens them now.</p>
     <h2>It says the file is read only here</h2>
     <p>The app that handed over the file did not allow writing to it. Save makes a copy where you pick. Opening the file with Open a file instead usually allows saving back.</p>
     <h2>The Tree view says the document is not valid JSON</h2>
@@ -207,7 +210,11 @@ FAQ = '''    <p class="kicker">Questions</p>
     <h2>Copy says the text is too big for the clipboard</h2>
     <p>Android's clipboard holds about a megabyte. Use Share or Save as for bigger text.</p>
     <h2>Where did the compare button go?</h2>
-    <p>Since 1.1.0 the top bar of the editor holds only Save and More. Compare is in More, Compare with another JSON, on the home screen's Compare JSON tile and in the Quick actions widget.</p>
+    <p>Since 1.1.0 the top bar of the editor holds only Save and More. Compare is in More, Compare with another JSON, on Home's Compare JSON tile and in the Quick actions widget.</p>
+    <h2>Can it open files from Google Drive or OneDrive?</h2>
+    <p>Yes, through Android's own file picker. A cloud storage app such as Google Drive or OneDrive that is on your phone and signed in shows its files in the picker's list of places, or open the file from inside that app and pick Neat Nest. Neat Nest itself never goes online and needs no account, so it has no sign in of its own.</p>
+    <h2>Where did Settings go?</h2>
+    <p>Since 1.1.2 Settings is the last item in the bar at the bottom, beside Home and Recent. In the editor, More, Settings opens it too.</p>
     <h2>Does Neat Nest send my files anywhere?</h2>
     <p>No. It has no internet access at all. See the <a href="https://neatnest.zanoski.com/privacy">privacy policy</a>.</p>
     </article>'''
@@ -244,7 +251,7 @@ print('built style.css')
 
 bad = 0
 for (file, title), desc, body in zip(PAGES,
-        ['The user guide for Neat Nest, the JSON and text editor for Android.', 'How to use Neat Nest 1.1.0: the home screen, opening and saving files, Text, Tree and Table views, JSONPath, Compare, widgets and Settings.',
+        ['The user guide for Neat Nest, the JSON and text editor for Android.', 'How to use Neat Nest 1.1.2: home and the bar, recent files, opening and saving files, Text, Tree and Table views, JSONPath, Compare, widgets and Settings.',
          'Answers to common questions about Neat Nest.', 'How to report a Neat Nest bug or ask for a feature.'],
         [INDEX, GUIDE, FAQ, REPORT]):
     html = shell(file, title, desc, body)
