@@ -5,41 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Home · Neat Nest user guide</title>
 <meta name="description" content="The user guide for Neat Nest, the JSON and text editor for Android.">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<script>try{var l=localStorage.getItem('look');if(l==='light'||l==='dark'||l==='black')document.documentElement.dataset.look=l}catch(e){}</script>
 <meta property="og:title" content="Home · Neat Nest user guide">
 <meta property="og:description" content="The user guide for Neat Nest, the JSON and text editor for Android.">
 <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/JetBrainsMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar">
   <div class="wrap">
-    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Neat Nest</span></a>
-    <nav aria-label="Guide pages"><a href="index.html" aria-current="page">Home</a><a href="guide.html">Guide</a><a href="faq.html">Questions</a><a href="report.html">Report a bug</a></nav>
+    <a class="brand" href="index.html" aria-current="page"><img src="img/icon.svg" alt="" width="34" height="34"><span>Neat Nest</span></a>
+    <nav class="pages" aria-label="Guide pages"><a href="guide.html">Guide</a><a href="faq.html">Questions</a><a href="report.html">Report a bug</a></nav>
+    <a class="key filled get" href="https://play.google.com/store/apps/details?id=com.zanoshky.neatnest">Get the app</a>
   </div>
 </header>
 <main id="main" class="page">
   <div class="wrap">
     <p class="kicker">User guide</p>
     <h1>Neat Nest</h1>
-    <p class="sub" style="margin-top:12px;color:var(--soft);font-size:1.15rem;max-width:40em">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Text, Tree and Table views, a JSONPath filter, and a structural compare. Pay once, no ads, works offline.</p>
+    <p class="lead">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Text, Tree and Table views, a JSONPath filter, and a structural compare. Pay once, no ads, works offline. This guide is for Neat Nest 1.1.0.</p>
     <div class="shots">
-      <figure><img src="img/1-text.jpg" alt="The Text view with line numbers and JSON colours, and the Text, Tree and Table tabs above it." width="540" height="1200" loading="lazy"><figcaption>Text view</figcaption></figure>
-      <figure><img src="img/2-tree.jpg" alt="The Tree view with objects opened, each value coloured by type." width="540" height="1200" loading="lazy"><figcaption>Tree view</figcaption></figure>
-      <figure><img src="img/3-compare.jpg" alt="Compare: two versions of a file, with a changed version number, an added key and a removed key marked." width="540" height="1200" loading="lazy"><figcaption>Compare</figcaption></figure>
-      <figure><img src="img/4-table.jpg" alt="The Table view of an array of orders, with id, customer and city columns." width="540" height="1200" loading="lazy"><figcaption>Table view</figcaption></figure>
+      <figure><img src="img/0-home-360.jpg" srcset="img/0-home-360.jpg 360w, img/0-home.jpg 720w" sizes="(min-width: 1000px) 175px, (min-width: 600px) 30vw, 45vw" width="360" height="800" fetchpriority="high" alt="The home screen: Open a file, tiles for New JSON, New text, Paste and Compare JSON, and the open documents."><figcaption>Home</figcaption></figure>
+      <figure><img src="img/1-text-360.jpg" srcset="img/1-text-360.jpg 360w, img/1-text.jpg 720w" sizes="(min-width: 1000px) 175px, (min-width: 600px) 30vw, 45vw" width="360" height="800" fetchpriority="high" alt="The Text view with line numbers and JSON colours, the tool row above and undo and redo below."><figcaption>Text view</figcaption></figure>
+      <figure><img src="img/2-tree-360.jpg" srcset="img/2-tree-360.jpg 360w, img/2-tree.jpg 720w" sizes="(min-width: 1000px) 175px, (min-width: 600px) 30vw, 45vw" width="360" height="800" loading="lazy" alt="The Tree view with the JSONPath filter box and objects opened, each value coloured by type."><figcaption>Tree view</figcaption></figure>
+      <figure><img src="img/3-compare-360.jpg" srcset="img/3-compare-360.jpg 360w, img/3-compare.jpg 720w" sizes="(min-width: 1000px) 175px, (min-width: 600px) 30vw, 45vw" width="360" height="800" loading="lazy" alt="Compare: two versions of a file, 1 added, 2 removed and 3 changed, with the changed version number marked."><figcaption>Compare</figcaption></figure>
+      <figure><img src="img/4-table-360.jpg" srcset="img/4-table-360.jpg 360w, img/4-table.jpg 720w" sizes="(min-width: 1000px) 175px, (min-width: 600px) 30vw, 45vw" width="360" height="800" loading="lazy" alt="The Table view of an array of orders, with id, customer name and customer city columns."><figcaption>Table view</figcaption></figure>
+      <figure><img src="img/7-settings-360.jpg" srcset="img/7-settings-360.jpg 360w, img/7-settings.jpg 720w" sizes="(min-width: 1000px) 175px, (min-width: 600px) 30vw, 45vw" width="360" height="800" loading="lazy" alt="Settings: the Look tiles Follow the phone, Default Light, Default Dark and Black, and the editor themes."><figcaption>Settings</figcaption></figure>
     </div>
-    <div class="cta">
-      <a class="btn main" href="guide.html">Read the guide</a>
-      <a class="btn" href="report.html">Report a bug or ask for a feature</a>
+    <div class="keys cta">
+      <a class="key filled" href="guide.html">Read the guide</a>
+      <a class="key tonal" href="report.html">Report a bug or ask for a feature</a>
     </div>
+    <h2 style="margin-top:48px">In this guide</h2>
+    <ul class="plate toc"><li><a href="guide.html#home"><span>The home screen</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li><li><a href="guide.html#open"><span>Open and save a file</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li><li><a href="guide.html#text"><span>The Text view</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li><li><a href="guide.html#tree"><span>The Tree view</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li><li><a href="guide.html#table"><span>The Table view</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li><li><a href="guide.html#filter"><span>JSONPath filter</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li><li><a href="guide.html#compare"><span>Compare two JSON files</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li><li><a href="guide.html#big"><span>Big files</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li><li><a href="guide.html#widgets"><span>Widgets and shortcuts</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li><li><a href="guide.html#settings"><span>Settings</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a></li></ul>
   </div>
 </main>
 <footer>
   <div class="wrap">
-    <span>Guide text and images are shared under CC BY 4.0. The Neat Nest app itself is proprietary. Made by Marko Zanoski.</span>
-    <nav aria-label="Footer"><a href="https://play.google.com/store/apps/details?id=com.zanoshky.neatnest">Google Play</a><a href="https://neatnest.zanoski.com">neatnest.zanoski.com</a><a href="https://github.com/Zanoshky/neat-nest-app/issues">Issues</a><a href="https://neatnest.zanoski.com/privacy">Privacy</a></nav>
+    <span class="by">Neat Nest by <a href="https://zanoski.com">Marko Zanoski</a></span>
+    <nav aria-label="Footer"><a href="https://neatnest.zanoski.com">Home</a><a href="index.html" aria-current="page">User guide</a><a href="report.html">Report a bug</a><a href="https://neatnest.zanoski.com/privacy">Privacy</a><a href="https://neatnest.zanoski.com/terms">Terms</a></nav>
+    <div class="looks" role="group" aria-label="Look"><span aria-hidden="true">Look</span><button type="button" data-look="auto" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Follow the phone</button><button type="button" data-look="light" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Light</button><button type="button" data-look="dark" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Dark</button><button type="button" data-look="black" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Black</button></div>
+    <p class="lic">Guide text and images are shared under CC BY 4.0. The Neat Nest app itself is proprietary.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var html = document.documentElement, bs = document.querySelectorAll('.looks button');
+  function show() { var cur = html.dataset.look || 'auto'; bs.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.look === cur)); }); }
+  bs.forEach(function (b) { b.addEventListener('click', function () {
+    var l = b.dataset.look;
+    if (l === 'auto') delete html.dataset.look; else html.dataset.look = l;
+    try { if (l === 'auto') localStorage.removeItem('look'); else localStorage.setItem('look', l); } catch (e) {}
+    show();
+  }); });
+  show();
+})();
+</script>
 </body>
 </html>
