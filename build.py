@@ -91,7 +91,7 @@ def toc(items):
 
 INDEX = f'''    <p class="kicker">User guide</p>
     <h1>Neat Nest</h1>
-    <p class="lead">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Text, Tree and Table views, a JSONPath filter, and a structural compare. Pay once, no ads, works offline. This guide is for Neat Nest 1.1.2.</p>
+    <p class="lead">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Text, Tree and Table views, a JSONPath filter, and a structural compare. Pay once, no ads, works offline. This guide is for Neat Nest 1.1.3.</p>
     <div class="shots">
       {shot("0-home", "Home: Open a file, tiles for New JSON, New text, Paste and Compare JSON, the open documents, and the bar with Home, Recent and Settings.", "Home", False)}
       {shot("1-text", "The Text view with line numbers and JSON colours, the tool row above and undo and redo below.", "Text view", False)}
@@ -109,7 +109,7 @@ INDEX = f'''    <p class="kicker">User guide</p>
 
 GUIDE = f'''    <p class="kicker">Guide</p>
     <h1>How Neat Nest works</h1>
-    <p class="lead">Every screen of Neat Nest 1.1.2, in the order you meet them.</p>
+    <p class="lead">Every screen of Neat Nest 1.1.3, in the order you meet them.</p>
     <article>
     <h2 id="home">Home and the bar</h2>
     <p>A bar at the bottom holds Home, Recent and Settings, so each is one tap from the others. Tap the one you are on to go back to its top.</p>
@@ -251,7 +251,7 @@ print('built style.css')
 
 bad = 0
 for (file, title), desc, body in zip(PAGES,
-        ['The user guide for Neat Nest, the JSON and text editor for Android.', 'How to use Neat Nest 1.1.2: home and the bar, recent files, opening and saving files, Text, Tree and Table views, JSONPath, Compare, widgets and Settings.',
+        ['The user guide for Neat Nest, the JSON and text editor for Android.', 'How to use Neat Nest 1.1.3: home and the bar, recent files, opening and saving files, Text, Tree and Table views, JSONPath, Compare, widgets and Settings.',
          'Answers to common questions about Neat Nest.', 'How to report a Neat Nest bug or ask for a feature.'],
         [INDEX, GUIDE, FAQ, REPORT]):
     html = shell(file, title, desc, body)
