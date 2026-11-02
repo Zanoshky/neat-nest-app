@@ -251,7 +251,7 @@ REPORT = f'''    <p class="kicker">Report</p>
     </dl>
     <p>Issues on GitHub are public. Never paste private data, keys or passwords, and crop screenshots.</p>
     <h2>Other ways</h2>
-    <p>Prefer not to use GitHub? Write to zanoski.marko@gmail.com (<a href="mailto:zanoski.marko@gmail.com">write an email</a>).</p>
+    <p>Prefer not to use GitHub? Write to support@zanoski.com (<a href="mailto:support@zanoski.com">write an email</a>).</p>
     </article>'''
 
 (ROOT / 'style.css').write_text((HERE / 'src/tokens.css').read_text() + '\n' + (HERE / 'src/style.css').read_text())
