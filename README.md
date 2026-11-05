@@ -21,7 +21,7 @@ This repo is the public home for Neat Nest users: the user guide, bug reports an
 
 ## Quick start
 
-1. Install Neat Nest from Google Play. It runs on Android 7 or newer.
+1. Install Neat Nest from Google Play. It runs on Android 10 or newer.
 2. Tap Open a file, or tap a .json file in your file manager and pick Neat Nest, then Always.
 3. Switch between Text, Tree and Table at the top of the editor.
 4. Home, Recent and Settings sit in the bar at the bottom; Settings is a short list with a page for each part.
