@@ -190,7 +190,7 @@ GUIDE = f'''    <p class="kicker">Guide</p>
       <dt>Pro</dt><dd>What Pro adds and Restore purchase, see Pro below.</dd>
       <dt>Help and feedback</dt><dd>User guide, Report a bug or ask for a feature, Privacy policy, and the font and icon credits.</dd>
     </dl>
-    <p>Under the list, Support the developer has a Buy me a coffee button, and About at the bottom shows Neat Nest and its version.</p>
+    <p>Under the list, About at the bottom shows Neat Nest and its version.</p>
     <p>Neat Nest follows Android's own font size up to 200 percent and works with TalkBack.</p>
     {pair(("7-settings", "Settings: the list of pages, Support the developer, and the bar.", "Settings"), ("8-privacy", "Settings, Privacy: the promises on red ban chips and the permissions it never asks for.", "Privacy"))}
 
