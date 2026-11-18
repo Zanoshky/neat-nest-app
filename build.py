@@ -5,7 +5,7 @@ import pathlib, re, sys
 
 HERE = pathlib.Path(__file__).parent
 ROOT = HERE / 'docs'
-PLAY = 'https://play.google.com/store/apps/details?id=com.zanoshky.neatnest'
+PLAY = 'https://play.google.com/store/apps/details?id=com.zanoshky.neatnest&amp;referrer=utm_source%3Dguide%26utm_medium%3Ddocs%26utm_campaign%3Dneat-nest-2026-11'
 SITE = 'https://neatnest.zanoski.com'
 REPO = 'https://github.com/Zanoshky/neat-nest-app'
 PAGES = [('index.html', 'Home'), ('guide.html', 'Guide'), ('faq.html', 'Questions'), ('report.html', 'Report a bug')]
@@ -222,7 +222,7 @@ FAQ = '''    <p class="kicker">Questions</p>
     <h2>Where did Settings go?</h2>
     <p>Since 1.1.2 Settings is the last item in the bar at the bottom, beside Home and Recent. In the editor, More, Settings opens it too.</p>
     <h2>What is free, and what is Pro?</h2>
-    <p>Free: opening, editing and saving JSON and text, Format, Compact and Sort keys, the line and column of an error, find and replace, and the four looks. Pro, one payment through Google Play, adds the Tree and Table views with the JSONPath filter, Compare, and the 20 editor themes. People who bought Neat Nest keep every tool, with nothing more to pay. See <a href="guide.html#pro">Pro</a>.</p>
+    <p>Free: opening, editing and saving JSON and text, Format, Compact and Sort keys, the line and column of an error, find and replace, and the four looks. Pro, one payment through Google Play, adds the Tree and Table views with the JSONPath filter, Compare, and the 20 editor themes. People who installed Neat Nest before it went free keep every tool on that install, with nothing more to pay. See <a href="guide.html#pro">Pro</a>.</p>
     <h2>Does Neat Nest send my files anywhere?</h2>
     <p>No. It has no internet access at all. See the <a href="https://neatnest.zanoski.com/privacy">privacy policy</a>.</p>
     </article>'''

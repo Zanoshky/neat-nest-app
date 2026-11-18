@@ -7,7 +7,7 @@
 <p align="center">A text editor for Android that turns into a JSON viewer, formatter and compare tool. Free to edit, with Pro for Tree, Table, Compare and themes. No ads, works offline.</p>
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.neatnest"><b>Google Play</b></a> ·
+  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.neatnest&referrer=utm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dneat-nest-2026-11"><b>Google Play</b></a> ·
   <a href="https://neatnest.zanoski.com"><b>neatnest.zanoski.com</b></a> ·
   <a href="https://zanoshky.github.io/neat-nest-app/"><b>User guide</b></a> ·
   <a href="https://github.com/Zanoshky/neat-nest-app/issues/new/choose"><b>Report a bug</b></a>
